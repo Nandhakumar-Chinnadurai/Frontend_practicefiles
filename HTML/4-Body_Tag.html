@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Portions</title>
+    <link rel="icon" type="image/x-icon" href="/ASSETS/Images/Bridge at Night.png">
+</head>
+<body>
+    <h1>Body Portions</h1>
+    <h1 id="cha" onclick="change()">To change the content of display, while click the <span>"Text"</span></h1>
+    <style>
+        #cha {
+            background-color: blue;
+            color: white;
+            font-size: xx-large;
+            font-style: italic;
+        }
+
+        #cha span {
+            color: red;
+        }
+    </style>
+    <script>
+        function change() {
+            let a = document.getElementById("cha");
+            a.innerHTML = "Magical Words Disapper";
+        }
+    </script>
+    <noscript>The browser doesn't support javascript</noscript>
+</body>
+</html>
