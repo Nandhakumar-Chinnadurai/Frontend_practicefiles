@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Form-1:</h1>
+    <form action="" method="get" autocomplete="off"
+    style="border: 2px solid black; background: linear-gradient(blue,white,red);">
+        <h2 style="text-align: center;">Personal Details</h2>
+        <table align="center" cellpadding="5px">
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" name="name" value="Bharani" readonly required></td>
+            </tr>
+            <tr>
+                <td><label for="age">Age:</label></td>
+                <td><input type="text" id="age" name="age" placeholder="ex:21" min="18" max="100" required></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender:</label></td>
+                <td>
+                    <input type="radio" id="gender" name="gender" value="male">
+                    <label for="gender">Male</label>
+                    <input type="radio" id="gender" name="gender" value="female">
+                    <label for="gender">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="mobile">Mobile:</label></td>
+                <td><input type="text" id="mobile" name="mobile" placeholder="+91-xxxxx xxxxx" maxlength="15" required>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Register"></td>
+                <td><input type="reset" value="Cancel"></td>
+            </tr>
+        </table>
+    </form>
+    <h1>Form-2:</h1>
+    <fieldset
+    style="border: 2px solid black; font-size: large; background: linear-gradient(blue,green,yellow,red);">
+        <form action="" method="post" autocomplete="off">
+            <h2 style="text-align: center;">User Account Details</h2>
+            <table align="center" cellpadding="4px">
+                <tr>
+                    <td><label for="fname">FIRSTNAME:</label></td>
+                    <td><input type="text" id="fname" name="fname" placeholder="Jai" maxlength="10" required></td>
+                </tr>
+                <tr>
+                    <td><label for="mname">MIDDLENAME:</label></td>
+                    <td><input type="text" id="mname" name="mname" placeholder="Sulthan" maxlength="10" disabled required></td>
+                </tr>
+                <tr>
+                    <td><label for="lname">LASTNAME:</label></td>
+                    <td><input type="text" id="lname" name="lname" placeholder="Kumar" maxlength="10" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">GENDER:</label></td>
+                    <td>
+                        <input type="radio" id="gender" name="gender" value="Male" required>
+                        <label for="gender">Male</label>
+                        <input type="radio" id="gender" name="gender" value="Female">
+                        <label for="gender">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="dob">DOB:</label></td>
+                    <td><input type="date" id="dob" name="dob" required></td>
+                </tr>
+                <tr>
+                    <td><label for="mobile">MOBILE:</label></td>
+                    <td><input type="tel" id="mobile" name="mobile" placeholder="+91-xxxxx xxxxx" maxlength="15" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">EMAIL:</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="abc@gmail.com" required></td>
+                </tr>
+                <tr>
+                    <td><label for="lang">LANGUAGE:</label></td>
+                    <td>
+                        <input type="checkbox" id="lang" name="lang" value="Tamil">
+                        <label for="lang">Tamil</label>
+                        <input type="checkbox" id="lang" name="lang" value="English">
+                        <label for="lang">English</label>
+                        <input type="checkbox" id="lang" name="lang" value="Hindi">
+                        <label for="lang">Hindi</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="color">COLOR:</label></td>
+                    <td><input type="color" id="color" name="color"></td>
+                </tr>
+                <tr>
+                    <td><label for="state">STATE:</label></td>
+                    <td><select id="state" name="state" required>
+                        <option value="TN">Tamil Nadu</option>
+                        <option value="KL">Kerala</option>
+                        <option value="KN">Karnataka</option>
+                        <option value="TS">Telugana</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="time">ENTRY TIME:</label></td>
+                    <td><input type="time" id="time" name="time" required></td>
+                </tr>
+                <tr>
+                    <td><label for="file">FILE:</label></td>
+                    <td><input type="file" id="file" name="file" max="8192" required></td>
+                </tr>
+                <tr>
+                    <td><label for="pwd">PASSWORD:</label></td>
+                    <td><input type="password" id="pwd" name="pwd" minlength="8" required></td>
+                </tr>
+                <tr>
+                    <td><label for="address">ADDRESS:</label></td>
+                    <td><textarea id="address" name="address" name="address" rows="5" cols="25" maxlength="200" required></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="url">URL:</label></td>
+                    <td><input type="url" id="url" name="url" required></td>
+                </tr>
+                <tr>
+                    <td><label for="search">SEARCH:</label></td>
+                    <td><input type="search" id="search" name="search" required></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Register"></td>
+                    <td><input type="reset" value="Cancel"></td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+    <h1>Form-3:</h1>
+    <fieldset style="border: 2px solid black; font-size: large; background-color: aquamarine;">
+        <legend>
+            <h2>Appointment</h2>
+        </legend>
+        <h2 style="text-align: center; background-color: rgb(101, 202, 153);">Patient Details</h2>
+        <form action="" method="post" autocomplete="off">
+            <table align="center" cellpadding="4px">
+                <tr>
+                    <td><label for="fname">FIRSTNAME:</label></td>
+                    <td><input type="text" id="fname" name="fname" placeholder="Ashok" maxlength="10" required></td>
+                </tr>
+                <tr>
+                    <td><label for="lname">LASTNAME:</label></td>
+                    <td><input type="text" id="lname" name="lname" placeholder="Selvan" maxlength="10" required></td>
+                </tr>
+                <tr>
+                    <td><label for="age">AGE:</label></td>
+                    <td><input type="number" id="age" name="age" placeholder="35" required></td>
+                </tr>
+                <tr>
+                    <td><label for="reason">REASON:</label></td>
+                    <td><textarea id="reason" name="reason" rows="5" cols="25" maxlength="200"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="time">TIME:</label></td>
+                    <td><input type="time" id="time" name="time" required></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Booking"></td>
+                    <td><input type="reset" value="Cancel"></td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</body>
+
+</html>
