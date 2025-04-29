@@ -1,0 +1,57 @@
+/* Web_Layout */
+/* --------------------------------- Layout-1 -------------------------*/
+#lay1, header, nav, section, article, aside, footer{
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    align-content: center;
+}
+#main{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+.part1{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 500px;
+}
+.part2{
+    width: 300px;
+}
+section, article{
+    height: 100px;
+}
+aside{
+    height: 223px;
+}
+
+/* --------------------------- Layout-2 ------------------------------------ */
+
+#lay2 header, #lay2 aside, .section section, #lay2 footer{
+    border: 3px solid black;
+    text-align: center;
+    align-content: center;
+    margin: 0px;
+}
+#head, #foot{
+    background-color: mediumpurple;
+}
+.section {
+    background-color: lightblue;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+#as1, #as2{
+    height: 329px;
+    width: 100px;
+    background-color: cornflowerblue;
+}
+.section{
+    flex-grow: 1;
+}
+
