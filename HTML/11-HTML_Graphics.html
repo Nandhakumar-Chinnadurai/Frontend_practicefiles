@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics</title>
+    <script defer src="../JS/script.js"></script>
+</head>
+<body>
+    <h1>1. Scaler Vector Graphics</h1>
+    <h2>SVG Shape:</h2>
+    <h2>Line</h2>
+    <svg width="500" height="50">
+        <line x1="50" y1="25" x2="400" y2="25" stroke-width="2" stroke="red"></line>
+        <line x1="50" y1="25" x2="50" y2="50" stroke-width="10" stroke="blue"></line>
+        <line x1="400" y1="25" x2="400" y2="50" stroke-width="10" stroke="blue"></line>
+    </svg>
+    <h2>Rectangle</h2>
+    <svg width="400" height="200">
+        <rect x="100" y="50" width="250" height="100" stroke-width="4" stroke="red" fill="purple"></rect>
+    </svg>
+    <svg width="200" height="200">
+        <rect x="50" y="50" width="100" height="100" stroke-width="3" stroke="yellow" fill="lime"></rect>
+    </svg>
+    <h2>Circle</h2>
+    <svg width="160" height="160">
+        <circle cx="80" cy="80" r="40" stroke-width="3" stroke="black" fill="maroon"></circle>
+        <circle cx="80" cy="80" r="3" fill="white"></circle>
+    </svg>
+    <h2>Ellipse</h2>
+    <svg width="300" height="200">
+        <ellipse cx="150" cy="100" rx="100" ry="50" strokw-width="5" stroke="green" fill="grey"></ellipse>
+    </svg>
+    <h2>Text</h2>
+    <svg width="400" height="50" style="border:3px solid black;">
+        <text x="50" y="30" stroke-width="2" stroke="red" style="font-size:xx-large">Scaler Vector Graphics</text>
+    </svg>
+    <h2>Polyline</h2>
+    <svg width="500" height="100">
+        <polyline points="0,0 50,9 50,40 100,20 100,20 100,50 100,50 200,40 200,70 200,80 200,80 400,80 400,100 500,100"
+        stroke-width="3" stroke="black" fill="lightblue"></polyline>
+    </svg>
+    <h2>Polygon</h2>
+    <svg width="500" height="100">
+        <polygon points="0,0 50,9 50,40 100,20 100,20 100,50 100,50 200,40 200,70 200,80 200,80 400,80 400,100 500,100"
+        stroke-width="3" stroke="black" fill="lightblue"></polygon>
+    </svg>
+    <h2>Path</h2>
+    <svg width="600" height="500" style="background-color: aqua;">
+        <path id="samimg" d="M50,500 L50,350 H50,550 L550,500" stroke-width="3" stroke="brown" fill="lightyellow"></path>
+        <path d="M275,350 L275,330 H325,330 L330,350" stroke-width="3" stroke="chartreuse" fill="chocolate"></path>
+        <path d="M200,330 L200,100 H400,400 L400,330 H200,330" stroke-width="3" stroke="blue" fill="sandybrown"></path>
+        <ellipse cx="250" cy="160" rx="30" ry="45" stroke-width="3" stroke="black" fill="white"></ellipse>
+        <ellipse cx="350" cy="160" rx="30" ry="45" stroke-width="3" stroke="black" fill="white"></ellipse>
+        <polygon points="270,250 300,180 335,250" stroke-width="3" stroke="gold" fill="orange"></polygon>
+        <rect x="253" y="275" height="30" width="100" stroke-width="3" stroke="tomato" fill="red"></rect>
+        <text>
+            <textpath href="#samimg">Sample Image</textpath>
+        </text>
+    </svg>
+    <h2>Textpath</h2>
+    <text>
+        <textpath>Sample Image</textpath>
+    </text>
+
+    <h1>2. Canvas Graphics</h1>
+    <h2>Default Canvas</h2>
+    <canvas id="mycanvas" height="100" width="200"></canvas>
+    <h2>Canvas Example</h2>
+    <canvas id="mycanvas" height="100" width="200" style="border: 2px solid black;"></canvas>
+    <h2>Canvas Graphics via Js</h2>
+    <canvas id="txtnamegrap" height="150" width="300" style="border:3px solid blue;"></canvas>
+</body>
+</html>
