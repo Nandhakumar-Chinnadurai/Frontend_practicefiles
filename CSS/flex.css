@@ -1,0 +1,183 @@
+/* CSS_Flex */
+/* --------------------------Layout-1---------------------------- */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+.lay1-container{
+    margin: auto;
+    width: 70%;
+    text-align: center;
+}
+.header > div{
+    border: 2px solid black;
+    padding: 3px;
+    margin: 25px;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+}
+.header{
+    background-color: aqua;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+}
+.footer{
+    background-color: aqua;
+    border: 2px solid black;
+    padding: 20px;
+}
+.main{
+    border: 2px solid black;
+    border-bottom: none;
+    border-top: none;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    height: 400px;
+    column-gap: 10px;
+    justify-content: space-evenly;
+}
+.section{
+    background-color: chartreuse;
+    border: 2px solid black;
+    width: 70%;
+}
+.aside{
+    background-color: coral;
+    border: 2px solid black;
+    width: 30%;
+}
+.section > div, .aside > div{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 15px;
+    height: 100px;
+    align-content: center;
+    overflow: hidden;
+}
+
+/* -------------------------- Layout-2 ---------------------------- */
+
+.lay2-container{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    border: 2px solid black;
+}
+#header{
+    background-color: yellow;
+    display: flex;
+    flex-direction: column; 
+}
+.head{
+    display: flex;
+    flex-direction: row;
+}
+.head > div{
+    border: 2px solid black;
+    padding: 3px;
+    margin: 25px;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+}
+nav{
+    background-color: darkgreen;
+    color: white;
+    border: 2px solid black;
+    display: flex;
+}
+ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 20px;
+}
+#main{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+#main .img{
+    background-color: rgb(192, 183, 183);
+}
+#main aside, h3, h5{
+    margin-left: 10px;
+}
+#main section, h3, h5{
+    margin-left: 10px;
+}
+#main .aside  p, #main .section p{
+    margin-left: 15px;
+}
+#main .section .img{
+    height: 150px;
+}
+#footer{
+    background-color: yellow;
+    display: flex;
+}
+.sep{
+    display: flex;
+    justify-content: space-around;
+}
+.sep ul li{
+    list-style-type: none;
+}
+
+/* -------------------------- Layout-3 ---------------------------- */
+
+.lay3-container{
+    width: 70%;
+    margin: auto;
+    background-color: purple;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.head-portion, .foot-portion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+    padding: 20px;
+    background-color: paleturquoise;
+}
+.content-portion{
+    display: flex;
+    flex-direction: row;
+}
+.content-portion > div{
+    flex-direction: column;
+    align-content: center;
+}
+.left-side{
+    background-color: palevioletred;
+    flex-grow: 1;
+}
+.main-center{
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+}
+.right-side{
+    background-color:chartreuse;
+    flex-grow: 1;
+}
+.cont-side{
+    background-color: darksalmon;
+    height: 100px;
+    align-content: center;
+}
+.sect-side{ 
+    background-color: steelblue;
+    height: 100px;
+    align-content: center;
+}
+
