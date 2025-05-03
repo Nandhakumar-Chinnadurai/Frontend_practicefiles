@@ -1,0 +1,174 @@
+/* CSS_Grid */
+/* ------------------------------------ Layout-1 ----------------------------- */
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.lay1-container{
+    width: 70%;
+    margin: auto;
+    background-color: dodgerblue;
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'section main main main main aside'
+    'section footer footer footer footer footer';
+    grid-template-rows: 1fr 4fr;
+    padding: 15px;
+    font-size: xx-large;
+    text-align: center;
+    gap: 10px;
+}
+
+.head{ grid-area: header;}
+.menu{ grid-area: section;}
+.main{ grid-area: main;}
+.right{ grid-area: aside;}
+.foot{ grid-area: footer;}
+
+.lay1-container > div{
+    background-color: whitesmoke;
+    color: black;
+    padding: 20px;
+    place-content: center;
+}
+
+@media only screen and (max-width: 550px){
+    .lay1-container{
+        font-size: large;
+        padding: 8px;
+        gap: 5px;
+        grid-template-rows: 1fr 2fr auto;
+        width: 100%;
+    }
+}
+
+/* ------------------------------------ Layout-2 ----------------------------- */
+
+.lay2-container{
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    display: grid;
+    grid-template-areas: 
+    'one one one one one one one one one one one one'
+    'two two two two two two three three three three three three'
+    'four four four four five five five five six six six six'
+    'seven seven seven eight eight eight nine nine nine ten ten ten'
+    'eleven eleven twelve twelve thirteen thirteen fourteen fourteen fifteen fifteen sixteen sixteen'
+    'seventeen eighteen nineteen twenty twentyone twentytwo twentythree twentyfour twentyfive twentysix twentyseven twentyeight';
+    padding: 15px;
+    font-size: x-large;
+    text-align: center;
+    gap: 10px;
+}
+
+.lay2-container > div{
+    background-color: yellow;
+    color: red;
+    padding: 10px;
+}
+
+.item1{ grid-area: one;}
+.item2{ grid-area: two;}
+.item3{ grid-area: three;}
+.item4{ grid-area: four;}
+.item5{ grid-area: five;}
+.item6{ grid-area: six;}
+.item7{ grid-area: seven;}
+.item8{ grid-area: eight;}
+.item9{ grid-area: nine;}
+.item10{ grid-area: ten;}
+.item11{ grid-area: eleven;}
+.item12{ grid-area: twelve;}
+.item13{ grid-area: thirteen;}
+.item14{ grid-area: fourteen;}
+.item15{ grid-area: fifteen;}
+.item16{ grid-area: sixteen;}
+.item17{ grid-area: seventeen;}
+.item18{ grid-area: eighteen;}
+.item19{ grid-area: nineteen;}
+.item20{ grid-area: twenty;}
+.item21{ grid-area: twentyone;}
+.item22{ grid-area: twentytwo;}
+.item23{ grid-area: twentythree;}
+.item24{ grid-area: twentyfour;}
+.item25{ grid-area: twentyfive;}
+.item26{ grid-area: twentysix;}
+.item27{ grid-area: twentyseven;}
+.item28{ grid-area: twentyeight;}
+
+@media only screen and (max-width: 600px){
+    .lay2-container{
+        padding: 8px;
+        font-size: large;
+        gap: 5px;
+        width: 100%;
+    }
+}
+
+/* ------------------------------------ Layout-3 ----------------------------- */
+
+.lay3-container{
+    width: 80%;
+    margin: auto;
+    background-color: aqua;
+    padding: 10px;
+    font-size: x-large;
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+    'hea hea hea hea hea'
+    'lef mai mai mai rig'
+    'foo foo foo foo foo';
+    gap: 8px;
+    margin-bottom: 10%;
+}
+.head-portion{ grid-area: hea;}
+.left-side{ grid-area: lef;}
+.main-center{ grid-area: mai;}
+.right-side{ grid-area: rig;}
+.foot-portion{ grid-area: foo;}
+
+.head-portion, .foot-portion{
+    background-color: tomato;
+    padding: 20px;
+}
+.left-side{
+    background-color: chartreuse;
+    padding: 10px;
+    place-content: center;
+}
+.right-side{
+    background-color:sandybrown;
+    padding: 10px;
+    place-content: center;
+}
+.cont-side{
+    background-color:hotpink;
+    padding: 10px;
+    margin-bottom: 8px;
+    height: 200px;
+    place-content: center;
+}
+.sect-side{
+    background-color:seagreen;
+    padding: 10px;
+    height: 100px;
+    place-content: center;
+}
+
+@media only screen and (max-width: 400px){
+    .lay3-container{
+        font-size: larger;
+        padding: 7px;
+        gap: 5px;
+        width: 100%;
+    }
+}
